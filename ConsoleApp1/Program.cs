@@ -1,17 +1,18 @@
 ﻿//initialize variables to zero
-int nmr1 = 0; int nmr2 = 0;
+int _1 = 0; int _2 = 0;
 
 //title
 Console.WriteLine("C sharp calculator\r\n");
 Console.WriteLine("----------------------\r\n");
 
 //First user input
-Console.WriteLine("Enter a number");
-nmr1 = Convert.ToInt32(Console.ReadLine());
+
+    Console.WriteLine("Enter a number");
+    _1 = Convert.ToInt32(Console.ReadLine());
 
 //Second user Input
 Console.WriteLine("Enter a second number");
-nmr2 = Convert.ToInt32(Console.ReadLine());
+_2 = Convert.ToInt32(Console.ReadLine());
 
 //ask user to choose operator
 Console.WriteLine("\ta - Add");
@@ -24,16 +25,16 @@ Console.Write("Your operator? ");
 switch (Console.ReadLine())
 {
     case "a":
-        Console.WriteLine($"Your result: {nmr1} + {nmr2} = " + (nmr1 + nmr2));
+        Console.WriteLine($"Your result: {_1} + {_2} = " + (_1 + _2));
         break;
     case "s":
-        Console.WriteLine($"Your result: {nmr1} - {nmr2} = " + (nmr1 - nmr2));
+        Console.WriteLine($"Your result: {_1} - {_2} = " + (_1 - _2));
         break;
     case "m":
-        Console.WriteLine($"Your result: {nmr1} * {nmr2} = " + (nmr1 * nmr2));
+        Console.WriteLine($"Your result: {_1} * {_2} = " + (_1 * _2));
         break;
     case "d":
-        Console.WriteLine($"Your result: {nmr1} / {nmr2} = " + (nmr1 / nmr2));
+        Console.WriteLine($"Your result: {_1} / {_2} = " + (_1 / _2));
         break;
 }
 // wait for user
